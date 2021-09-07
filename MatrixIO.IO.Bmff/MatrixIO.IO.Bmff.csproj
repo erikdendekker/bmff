@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
- <PropertyGroup>
+  <PropertyGroup>
     <AssemblyName>MatrixIO.IO.Bmff</AssemblyName>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <VersionPrefix>1.1.0</VersionPrefix>
@@ -9,19 +9,23 @@
     <!-- Details -->
     <Company>Matrix.IO LLC</Company>
     <Copyright>Copyright © Matrix.IO, LLC 2007</Copyright>
-   <Description>Base Media File Format library</Description>
- </PropertyGroup>
+    <Description>Base Media File Format library</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/heksesang/bmff</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>BMFF;QuickTime;MPEG4;MP4;MOV;Smooth Streaming;ISMV;3GPP;3GPP2;3GP;DCF;JPEG2000;JPG2000;JP2;Motion JPEG2000;MJ2;M21;DVB;Flash;F4V;FairPlay</PackageTags>
+  </PropertyGroup>
 
- <ItemGroup>
-   <Compile Remove="Specifications\**" />
-   <EmbeddedResource Remove="Specifications\**" />
-   <None Remove="Specifications\**" />
- </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Specifications\**" />
+    <EmbeddedResource Remove="Specifications\**" />
+    <None Remove="Specifications\**" />
+  </ItemGroup>
 
- <ItemGroup>
-   <None Remove="LICENSE.txt" />
-   <None Remove="ROADMAP.txt" />
- </ItemGroup>
+  <ItemGroup>
+    <None Remove="LICENSE.txt" />
+    <None Remove="ROADMAP.txt" />
+  </ItemGroup>
   
   <ItemGroup>
     <Folder Include="IO\Bmff\Boxes\Heif\" />
